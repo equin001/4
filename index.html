@@ -1,41 +1,126 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link href='https://fonts.googleapis.com/css?family=Figtree' rel='stylesheet'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body {
-    font-family: 'Figtree';font-size: 20px;
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 25px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
 </style>
+  <link href='https://fonts.googleapis.com/css?family=Figtree' rel='stylesheet'>
+  <style>
+  body {
+      font-family: 'Figtree';font-size: 20px;
+
+  </style>
 </head>
 <body>
 
 <h1>&euro;ddie$</h1>
 
-    
-      <h3>Turtle power</h3>
-  <b>Like how Tether is presumably backed by the dollar, like the dollar was presumably backed by gold, 'belief' is turtles all the way down. <b>
+<button class="accordion">Turtle power</button>
+<div class="panel">
+  <p> <b>Like how Tether is presumably backed by the dollar, like the dollar was presumably backed by gold, 'belief' is turtles all the way down. <b></p>
+</div>
 
-      <h3>Pennywise</h3>
-  <b><a href="https://link.storjshare.io/s/jvm7biyrkkjm5nox7t3vbttz3y3a/edddies%2FDogecoin.mp4"  target="_blank" style="background-color:orange">Skip to 1:18 to understand "strict morals" and why the price of your &euro;ddie$ can be anything</a><b>
+<button class="accordion">Pennywise</button>
+<div class="panel">
+  <p> <b><a href="https://link.storjshare.io/s/jvm7biyrkkjm5nox7t3vbttz3y3a/edddies%2FDogecoin.mp4"  target="_blank" style="background-color:orange">Skip to 1:18 to understand "strict morals" and why the price of your &euro;ddie$ can be anything</a><b>
 
-  <h3>Price</h3>
-  <b><a href="https://algoexplorer.io/tx/YYRM2TA3JMBBWH4JBVRGK4G6IECRDUOIJCJJKG2WKLUPKA743FOA"  target="_blank" style="background-color:orange">Starting from Wed, 24 May 2023 07:10:25 GMT</a>, each year you just add "(" to the beginning and ") + 21%" to the end of the formula to get the price.<b>   
-      
-<h3>Year one</h3>
-<b>In year one 1 &euro;ddie$ is priced at <a href="https://www.wolframalpha.com/input?i=%2821+EUR+%2B+21+USD%29*+1+%2B+21%25+%2B+21%25"  target="_blank" style="background-color:orange">(21 EUR + 21 USD)* 1 + 21% VAT + 21% INFLATION</a>. Each year this formula goes up with  + 21%, just like the rings on a tree it keeps growing annually.<b>
+</p>
+</div>
 
-<h3>Year two</h3>
-<b>One year after the first &euro;ddie$ is created the price is now <a href="https://www.wolframalpha.com/input?i=%28%2821+EUR+%2B+21+USD%29*+1+%2B+21%25+%2B+21%25%29+%2B+21%25"  target="_blank" style="background-color:orange">((21 EUR + 21 USD)* 1 + 21% + 21%) + 21%</a>. <b>
+<button class="accordion">Price</button>
+<div class="panel">
+  <p><b><a href="https://algoexplorer.io/tx/YYRM2TA3JMBBWH4JBVRGK4G6IECRDUOIJCJJKG2WKLUPKA743FOA"  target="_blank" style="background-color:orange">Starting from Wed, 24 May 2023 07:10:25 GMT</a>, each year you just add "(" to the beginning and ") + 21%" to the end of the formula to get the price.<b>   
+</p>
+</div>
 
-<h3>Year three</h3>
-<b>Two years after the first &euro;ddie$ is created the price is now <a href="https://www.wolframalpha.com/input?i=%28%28%2821+EUR+%2B+21+USD%29*+1+%2B+21%25+%2B+21%25%29+%2B+21%25%29+%2B+21%25"  target="_blank" style="background-color:orange">(((21 EUR + 21 USD)* 1 + 21% + 21%) + 21%) + 21%</a> etc.<b>
+<button class="accordion">Year one</button>
+<div class="panel">
+  <p> <b>In year one 1 &euro;ddie$ is priced at <a href="https://www.wolframalpha.com/input?i=%2821+EUR+%2B+21+USD%29*+1+%2B+21%25+%2B+21%25"  target="_blank" style="background-color:orange">(21 EUR + 21 USD)* 1 + 21% VAT + 21% INFLATION</a>. Each year this formula goes up with  + 21%, just like the rings on a tree it keeps growing annually.<b></p>
+</div>
 
-  <h3>Inflation</h3>
-  <b>&euro;ddie$ price increase is a reaction to currency inflation, &euro;ddie$ are deflationary by nature.<b>
 
-  <h3>Timebanking</h3>
-<b>&euro;ddie$ can also be use to pay people for their time, 60 &euro;$ is one hour.<b>
+<button class="accordion">Year two</button>
+<div class="panel">
+  <p><b>One year after the first &euro;ddie$ is created the price is now <a href="https://www.wolframalpha.com/input?i=%28%2821+EUR+%2B+21+USD%29*+1+%2B+21%25+%2B+21%25%29+%2B+21%25"  target="_blank" style="background-color:orange">((21 EUR + 21 USD)* 1 + 21% + 21%) + 21%</a>. <b>
+</p>
+</div>
 
-  </body>
-  </html>
+<button class="accordion">Year three</button>
+<div class="panel">
+  <p><b>Two years after the first &euro;ddie$ is created the price is now <a href="https://www.wolframalpha.com/input?i=%28%28%2821+EUR+%2B+21+USD%29*+1+%2B+21%25+%2B+21%25%29+%2B+21%25%29+%2B+21%25"  target="_blank" style="background-color:orange">(((21 EUR + 21 USD)* 1 + 21% + 21%) + 21%) + 21%</a> etc.<b>
+
+
+</p>
+</div>
+
+<button class="accordion">Inflation</button>
+<div class="panel">
+  <p><b>&euro;ddie$ price increase is a reaction to currency inflation, &euro;ddie$ are deflationary by nature.<b>
+
+
+</p>
+</div>
+
+<button class="accordion">Timebanking</button>
+<div class="panel">
+  <p><b>&euro;ddie$ can also be use to pay people for their time, 60 &euro;$ is one hour.<b>
+
+
+</p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</body>
+</html>
